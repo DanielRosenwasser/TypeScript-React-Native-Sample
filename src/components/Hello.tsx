@@ -15,16 +15,16 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement }: Props) {
   }
 
   return (
-    <View style={styles.root }>
+    <View style={styles.root}>
         <Text style={styles.greeting}>
-        Hello {name + getExclamationMarks(enthusiasmLevel)}
+            Hello {name + getExclamationMarks(enthusiasmLevel)}
         </Text>
         <View style={styles.buttons}>
             <View style={styles.button}>
-            <Button title="-" onPress={onDecrement || (() => {})} accessibilityLabel="decrement" color='red' />
+                <Button title="-" onPress={onDecrement || (() => {})} color='red' />
             </View>
             <View style={styles.button}>
-                <Button title="+" onPress={onIncrement || (() => {})}  accessibilityLabel="increment" color='blue' />
+                <Button title="+" onPress={onIncrement || (() => {})} color='blue' />
             </View>
         </View>
     </View>
